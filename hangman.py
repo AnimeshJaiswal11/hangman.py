@@ -1,5 +1,5 @@
 import random
-movies = ["don","Baaghi","titanic"]
+movies = ["Titanic","star wars","lion king"]
 name = input("Enter your name: ")
 print("Hello " + name + " Welcome to Hangman arena !!")
 total_turns = 7
