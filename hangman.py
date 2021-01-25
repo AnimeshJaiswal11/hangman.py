@@ -10,12 +10,13 @@ print("You will be given " + str(total_turns) + " chances to guess a movie")
 print("If you have guessed a wrong character one turn will be deducted")
 print("Okay....let's play")
 print("Please type exit if you want to stop the game play")
-q = "y"
 while True:
+    print('Enter yes to play game else no')
+    q = input()
     choosen = []
     random.shuffle(movies)
     movie = orgmovie = random.choice(movies).lower()
-    if q == "y" or q == "yes":
+    q == "yes":
         turns = total_turns
         for i in movie:
             if i != " ":
@@ -49,6 +50,6 @@ while True:
             print("You Loose..")
             print("correct answer: " + orgmovie.upper())
             print("Better luck next time")
-    if q != "y" or q != "yes":
+    else:
         break
 
